@@ -1,0 +1,15 @@
+#!usr/bin/bash
+
+
+      summarize-dvfilter > test
+      sleep 3s
+     echo " Enter the VM name, unique name is required "
+     read _VM
+     echo "$_VM"
+
+      less test | grep "$_VM"  -A4 >  test_1
+      awk '/name:/ { print $2 }' test_1  > test2
+
+#       Echo " Filter of Interest "
+        cat test2
+[root@is-tse-h91:/tmp]
