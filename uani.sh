@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# TEST 
 
 ############### provide input csv file and platform IP as part of argument to script( $./uani2.sh uani.txt 10.79.199.205 ) ## #########
 file="${1}"
